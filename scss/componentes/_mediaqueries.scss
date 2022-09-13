@@ -1,0 +1,51 @@
+// INDEX
+@media only screen and (max-width: 768px){
+	.gridContainerIndex{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas: 
+		"header"
+		"imagenPrincipalIndex"
+		"encabezado"
+		"imagenLateralIzq"
+		"textoLateralDer"
+		"footer"
+	}
+	header{flex-direction: column;}
+	nav ul{justify-content: center;}
+    .carousel-item{
+        img{
+            height: auto;
+        }
+	}
+}
+
+// NOSOTROS
+@media only screen and (max-width: 768px){
+	.encabezado{
+        iframe{
+            width: 100%;
+        }
+	}
+}
+
+// ARTISTAS
+@media only screen and (max-width:768px){
+	.gridContainerArtistas{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto repeat(6, 1fr) auto;
+		grid-template-areas: 
+		"header"
+		"imagenPrincipalArt"
+		"encabezado"
+		"imagenArribaIzq"
+		"imagenArribaCentro" 
+		"imagenArribaDer"
+		"imagenAbajoIzq" 
+		"imagenAbajoCentro" 
+		"imagenAbajoDer"
+		"footer"
+	}
+}

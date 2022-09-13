@@ -1,0 +1,122 @@
+// GENERAL
+.container-fluid{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+div img{
+	width: 100%;
+}
+.encabezado{
+	text-align: center;
+	padding: 20px 0;
+}
+.fontSize{
+    font-size: 4rem;
+}
+// INDEX
+.gridContainerIndex{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header header"
+	"imagenPrincipalIndex imagenPrincipalIndex"
+	"encabezado encabezado"
+	"imagenLateralIzq textoLateralDer"
+	"footer footer"
+}
+header{
+	grid-area: header;
+}
+.imagenPrincipalIndex{
+	grid-area: imagenPrincipalIndex;
+}
+.encabezado{
+	grid-area: encabezado;
+}
+.imagenLateralIzq{
+	grid-area: imagenLateralIzq;
+}
+.textoLateralDer{
+	grid-area: textoLateralDer;
+}
+footer{
+	grid-area: footer;
+}
+.imagenLateralIzq img{
+	width: 100%
+}
+.carousel-item img{
+	height: 990px;
+}
+
+// UBICACION
+.iframeWidth{
+    width: 100%;
+}
+
+// ARTISTAS 
+
+.gridContainerArtistas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+	"header header header"
+	"imagenPrincipalArt imagenPrincipalArt imagenPrincipalArt"
+	"encabezado encabezado encabezado"
+	"imagenArribaIzq imagenArribaCentro imagenArribaDer"
+	"imagenAbajoIzq imagenAbajoCentro imagenAbajoDer"
+	"footer footer footer"
+}
+header{
+	grid-area: header;
+}
+.imagenPrincipalArt{
+	grid-area: imagenPrincipalArt;
+}
+.encabezado{
+	grid-area: encabezado;
+}
+.imagenArribaIzq{
+	grid-area: imagenArribaIzq;
+}
+.imagenArribaCentro{
+	grid-area: imagenArribaCentro;
+}
+.imagenArribaDer{
+	grid-area: imagenArribaDer;
+}
+.imagenAbajoIzq{
+	grid-area: imagenAbajoIzq;
+}
+.imagenAbajoCentro{
+	grid-area: imagenAbajoCentro;
+}
+.imagenAbajoDer{
+	grid-area: imagenAbajoDer;
+}
+footer{
+	grid-area: footer;
+}
+// ESTILO IMG ARTISTAS
+.imagenArribaIzq img, .imagenArribaCentro img, .imagenArribaDer img, .imagenAbajoIzq img, .imagenAbajoCentro img, .imagenAbajoDer img{
+	padding: 25px;
+}
+.fontFamily, .textoMariano, .textoTurco, .textoPiranha, .textoLeandro, .textoCarlos, .textoJoaquin{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Oswald'
+}
+
+// CONTACTO
+.estiloFormulario{
+	font-size: 25px;
+    input{
+        font-size: 18px; 
+        transition: font-size .5s;
+        &:focus{
+            font-size: 35px;
+        }
+    }
+}
