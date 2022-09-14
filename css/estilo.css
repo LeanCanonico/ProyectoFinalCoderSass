@@ -1,3 +1,10 @@
+.row {
+  --bs-gutter-x: 0px !important; }
+
+.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -30,10 +37,6 @@ header {
           font-size: 22px; }
           header nav ul li a:hover {
             color: black; }
-
-.container-fluid {
-  padding-right: 0px !important;
-  padding-left: 0px !important; }
 
 div img {
   width: 100%; }
