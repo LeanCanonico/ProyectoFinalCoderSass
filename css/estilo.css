@@ -15,11 +15,12 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-color: #181a1b;
   overflow-x: hidden; }
 
 header {
   display: flex;
-  background-color: #d20d0d;
+  background-color: #9e0808;
   align-items: center; }
   header nav {
     width: 100%; }
@@ -43,10 +44,12 @@ div img {
 
 .encabezado {
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0;
+  color: whitesmoke; }
 
 .fontSize {
-  font-size: 4rem; }
+  font-size: 4rem;
+  color: whitesmoke; }
 
 .gridContainerIndex {
   display: grid;
@@ -123,7 +126,8 @@ footer {
 .fontFamily, .textoMariano, .textoTurco, .textoPiranha, .textoLeandro, .textoCarlos, .textoJoaquin {
   text-align: center;
   font-size: 20px;
-  font-family: 'Oswald'; }
+  font-family: 'Oswald';
+  color: whitesmoke; }
 
 .estiloFormulario {
   font-size: 25px; }
