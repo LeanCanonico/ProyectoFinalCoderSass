@@ -132,6 +132,25 @@ footer {
   font-family: 'Oswald';
   color: whitesmoke; }
 
+.gridContainerContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "imagenPrincipalContacto imagenPrincipalContacto" "header header" "formularioContacto imagenFormulario"; }
+
+.imagenPrincipalContacto {
+  grid-area: imagenPrincipalContacto; }
+
+.header {
+  grid-area: header; }
+
+.formularioContacto {
+  grid-area: formularioContacto;
+  background-color: #9e0808; }
+
+.imagenFormulario {
+  grid-area: imagenFormulario; }
+
 .estiloFormulario {
   font-size: 25px; }
   .estiloFormulario input {
@@ -163,6 +182,22 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto repeat(6, 1fr) auto;
     grid-template-areas: "header" "imagenPrincipalArt" "encabezado" "imagenArribaIzq" "imagenArribaCentro"  "imagenArribaDer" "imagenAbajoIzq"  "imagenAbajoCentro"  "imagenAbajoDer" "footer"; } }
+
+@media only screen and (max-width: 768px) {
+  .gridContainerContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "imagenPrincipalContacto" "header" "formularioContacto" "imagenFormulario"; }
+  .imagenPrincipalContacto {
+    grid-area: imagenPrincipalContacto; }
+  .header {
+    grid-area: header; }
+  .formularioContacto {
+    grid-area: formularioContacto;
+    padding-bottom: 20px; }
+  .imagenFormulario {
+    grid-area: imagenFormulario; } }
 
 footer {
   font-size: 20px;

@@ -8,6 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<!-- ETIQUETAS PARA SEO -->
+    <meta name="description" content="Esta es la seccion contacto de Welldone Tattoos, donde podes contactarnos a traves de un formulario.">
+    <meta name="keywords" content="TATUAJES, WELLDONE TATTOOS, CONTACTO, MAQUINA DE TATUAR">
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- CSS BOOTSTRAP -->
@@ -52,25 +55,26 @@
 			</div>
 		</header>
 		<!-- INICIO MAIN -->
-		<main>
-			<div data-aos="zoom-in">
+		<main class="gridContainerContacto">
+			<div class="imagenPrincipalContacto" data-aos="zoom-in">
 				<img src="../assets/img/maquinaTatuar.jpg" alt="Contacto">
 			</div>
-			<div class="encabezado">
+			<div class="header encabezado">
 				<h2 class="fw-bold fontSize">COMO CONTACTARNOS</h2>
 			</div>
-			<form class="estiloFormulario fontFamily" action="">
+			<form class="formularioContacto estiloFormulario fontFamily" action="">
 				<label for="nombre">Nombre completo</label> <br>
-				<input id="nombre" type="text" name="nombre"> <br>
-				
+				<input id="nombre" type="text" name="nombre" placeholder="Leandro Canonico"> <br>	
 				<label for="edad">Edad</label> <br>
-				<input id="edad" type="number" name="edad"> <br>
-				
-				<label for="opinion">¿Que te parecio la pagina?</label><br>
-				<textarea id="opinon" name="opinion"></textarea> <br>
-				<input type="reset" value="Resetear"> 
-				<input type="submit" value="Enviar">
+				<input id="edad" type="number" name="edad" placeholder="19"> <br>	
+				<label for="opinion">¿Que te queres tatuar?</label><br>
+				<textarea id="opinon" name="opinion" placeholder="Un dragon en estilo japones"></textarea> <br>
+				<input type="reset" class="btn btn-light" value="Resetear"> 
+				<input type="submit" class="btn btn-light" value="Enviar">
 			</form>
+			<div class="imagenFormulario">
+				<img src="../assets/img/imagenFormulario.jpg" alt="">
+			</div>
 		</main>
 		<!-- INICIO FOOTER -->
 		<footer>

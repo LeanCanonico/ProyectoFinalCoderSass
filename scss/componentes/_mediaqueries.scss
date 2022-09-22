@@ -49,3 +49,21 @@
 		"footer"
 	}
 }
+
+// CONTACTO
+@media only screen and (max-width:768px){
+	.gridContainerContacto{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+		"imagenPrincipalContacto"
+		"header"
+		"formularioContacto"
+		"imagenFormulario";
+	}
+	.imagenPrincipalContacto{grid-area: imagenPrincipalContacto;}
+	.header{grid-area: header;}
+	.formularioContacto{grid-area: formularioContacto; padding-bottom: 20px;}
+	.imagenFormulario{grid-area: imagenFormulario;}
+}

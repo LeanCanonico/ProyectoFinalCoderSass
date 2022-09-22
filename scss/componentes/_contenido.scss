@@ -109,6 +109,24 @@ footer{
 }
 
 // CONTACTO
+.gridContainerContacto{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+	"imagenPrincipalContacto imagenPrincipalContacto"
+	"header header"
+	"formularioContacto imagenFormulario"
+}
+.imagenPrincipalContacto{grid-area: imagenPrincipalContacto;}
+.header{grid-area: header;}
+.formularioContacto{
+	grid-area: formularioContacto;
+	background-color: $colorPrincipal;
+	
+}
+.imagenFormulario{grid-area: imagenFormulario;}
+
 .estiloFormulario{
 	font-size: 25px;
     input{
