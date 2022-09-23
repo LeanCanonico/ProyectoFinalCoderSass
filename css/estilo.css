@@ -146,7 +146,8 @@ footer {
 
 .formularioContacto {
   grid-area: formularioContacto;
-  background-color: #9e0808; }
+  background-color: #9e0808;
+  padding-top: 20px; }
 
 .imagenFormulario {
   grid-area: imagenFormulario; }
@@ -195,6 +196,7 @@ footer {
     grid-area: header; }
   .formularioContacto {
     grid-area: formularioContacto;
+    padding-top: 20px;
     padding-bottom: 20px; }
   .imagenFormulario {
     grid-area: imagenFormulario; } }
